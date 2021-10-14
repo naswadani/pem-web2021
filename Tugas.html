@@ -1,22 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+    *{
+        text-decoration: none;
+        margin:0px;
+        padding:0px;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Open Sans',sans-serif;
+    
+    }
+    .wrapper{
+        width: 1100px;
+        margin: auto;
+        position: relative;
+    }
+    
+    .logo a {
+        font-size: 50px;
+        font-weight: bold;
+        float: left;
+        font-family:courier;
+        color: #14279B;
+    }
+    
+    .menu{
+        float: right;
+    }
+    
+    nav{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        line-height: 80px;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        background:#FFFFFF;
+        z-index: 1;
+        border-bottom:1px solid #14279B;
+    }
+    
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        float:left;
+    }
+    nav ul li a{
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding:0px 16px 0px 16px;
+        text-decoration: none; 
+    }
+    
+    nav ul li a:hover{
+        text-decoration: underline;
+    }
+    section{
+        margin: auto;
+        display: flex;
+        margin-bottom: 50px;
+    }
+    
+    .kolom{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .kolom .deskripsi{
+        font-size: 20px;
+        font-weight: bold;
+        color: #14279B;
+    }
+    h2{
+       
+        font-weight: 800;
+        font-size: 45px;
+        margin-bottom: 20px;
+        color:#14279B;
+        width:100%  ;
+        line-height: 50px;
+    }
+    @media screen and(max-width:991.98){
+        .wrapper{
+            width: 90%;
+        }
+        .logo a{
+            display: block;
+            width: 90%;
+            text-align: center;
+        }
+        nav .menu {
+            width: 100%;
+            margin: 0;
+        }
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60%;
+    </style>
+        
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latihan dan Tugas</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body, h1, h2, p, td, span{
+            font-family: 'comic sans ms';
+        }
+       
+    </style>
 </head>
 <body>
         <nav>
             <div class="wrapper">
-                <div class="logo"><a href=''>Biodata.</a></div>
+                <div class="logo"><a href=''>Biodata</a></div>
                 <div class="menu">
                     <ul>
                         <li><a href="#profil">Profil</a></li>
                         <li><a href="#biodata">Biodata</a></li>
-                        <li><a href="#hobi">Hobi</a></li>
                         <li><a href="#contact">Contact</a></li>
+        
                     </ul>    
                 </div>
             </div>
@@ -28,7 +140,7 @@
                 <div class="kolom">
                     <p class="Profil Singkat"></p>
                     <h2>Profil Singkat</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit saepe ipsam repellendus optio consectetur? Tempore blanditiis repellendus quasi praesentium aliquam!</p>
+                    <p>Nama saya Naswa Bryna Danikhansa, lahir di Kudus, 29 Maret 2004. Menyukai bidang komputer sejak di bangku sekolah dasar, membuat saya memantapkan diri untuk melajutkan kuliah di program studi Teknik Informatika, Universitas dian Nuswantoro. Selain dari ketertarikan terhadap bidang komputer dukungan orang tua juga menjadi penyemangat saya untuk memilih jurusan ini. </p>
                     <p><a href=</p>
                 </div>
             </section>
@@ -36,13 +148,58 @@
             <!--untuk biodata-->
             <section id="biodata">
                 <div class="kolom">
-                    <p class ="deskripsi">Biodata Diri</p>
-                    <h2>Mahasiswa</h2>    
+                    <p align=center class ="deskripsi">Biodata Diri</p>
+                    <h2 align=center >Mahasiswa</h2>  
+                    <table>
+                        <tr>
+                            <td rowspan="7" width="100px"> <img src="https://raw.githubusercontent.com/naswadani/Latihan/main/fotoprofil.JPG"alt="" width="200px" style="display:block;border-radius: 6 px;border-color: black; margin-right: 30px;border: 2px;"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Nama Lengkap</b> </td>
+                            <td>:</td>
+                            <td>Naswa Bryna Danikhansa</td>
+                        </tr>
+                        <tr>
+                            <td><b>NIM</b></td>
+                            <td>:</td>
+                            <td>A11.2021.13262</td>
+                        </tr>
+                        <tr>
+                            <td><b>No Telepon</b></td>
+                            <td>:</td>
+                            <td>085156332553</td>
+                        </tr>
+                        <tr>
+                            <td><b>Asal</b></td>
+                            <td>:</td>
+                            <td>Kudus</td>
+                        </tr>
+                        <tr>
+                            <td><b>Program Studi</b></td>
+                            <td>:</td>
+                            <td>Teknik Informatika</td>
+                        </tr>
+                        <tr>
+                            <td><b>Email</b></td>
+                            <td>:</td>
+                            <td><a href="naswakhansa23@gmail.com">naswakhansa23@gmail.com</a></td>
+                        </tr>
+                    </table>
+
             </section>
 
 
         </div>
+        <div>
+            <section id="contact">
+            <div class="kolom">
+                <h2>Contact Person</h2>
+                <a href="https://www.instagram.com/daninaswa"><img src="https://raw.githubusercontent.com/naswadani/Latihan/main/download.jpeg" alt=""width="50px"></a>
+                <a href="https://github.com/naswadani"><img src="https://raw.githubusercontent.com/naswadani/Latihan/main/GitHub-Mark-120px-plus.png " alt=""width="50px"></a>
 
+            </div>
+
+        </div>
    </ul>
 </body>
 </html>
