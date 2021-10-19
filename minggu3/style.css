@@ -1,0 +1,61 @@
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.all{
+    background-color: black;
+}
+li{
+    list-style-type:none;
+}
+/*Header*/
+header{
+    background-color: bisque;
+    color: black;
+    height: 90px;
+}
+.header-logo{
+    float: left;
+    font-size: 40px;
+    padding: 20px 40px;
+}
+.icon{
+    float: right;
+    margin: 20px;
+}
+.header-nav li{
+    float: left;
+    padding: 35px 20px;
+
+    position: sticky;
+}
+.header-nav ul{
+    text-align: center;
+    margin: auto;
+    line-height: 60%;
+}
+
+/*main*/
+main{
+    padding:90px 80px;
+    height: 80vh;
+    background: linear-gradient(rgba(156, 108, 53, 0.568), #57430491), url('https://i.giphy.com/fWtJrVD5I2WIJRmfAw.gif');
+    background-size: cover;
+    height: 350px;
+}
+.main-contain h1{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*isi*/
+.kolom{
+    background-color: #C7BEA2;
+    margin-top: 30px;
+}
